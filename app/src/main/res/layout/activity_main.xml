@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.a660252397.databasedemo.MainActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout__firstname"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            style="@style/MyTextView.EditText"
+            android:id="@+id/firstNameET"
+            android:hint="First Name">
+
+            <requestFocus />
+        </EditText>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout__lastname"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            style="@style/MyTextView.EditText"
+            android:id="@+id/lastNameET"
+            android:hint="Last Name">
+
+            <requestFocus/>
+        </EditText>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/addButton"
+        style="@style/MyTextView.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addClick"
+        android:text="@string/add" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        style="@style/MyTextView.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="deleteClick"
+        android:text="@string/delete" />
+
+    <Button
+        android:id="@+id/deleteAllButton"
+        style="@style/MyTextView.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="deleteAllClick"
+        android:text="@string/delete_all" />
+
+    <Button
+        android:id="@+id/showButton"
+        style="@style/MyTextView.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showClick"
+        android:text="@string/show" />
+
+    <Button
+        android:id="@+id/showAllButton"
+        style="@style/MyTextView.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showAllClick"
+        android:text="@string/show_all" />
+
+
+
+</LinearLayout>
